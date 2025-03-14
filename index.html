@@ -23,29 +23,36 @@
       .item {
         background-color: blue;
         color: white;
-        box-shadow: .5rem .5rem .3rem .01rem #bdbbbb;
         font-weight: bold;
-        margin: 1rem;
+        margin: .1rem;
         padding: 1rem;
         width: 5rem;
-        height: 5rem;
+        height: 3rem;
+      }
+
+      .logo {
+        flex-grow: 1;
+      }
+
+      .titulo-do-site {
+        flex-grow: 12;
+      }
+
+      .menu-sandwich {
+        flex-grow: 1;
+      }
+
+      .painel {
+        border: 3px solid red;
+        display: flex;
       }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="item">Item 01</div>
-        <div class="item">Item 02</div>
-        <div class="item">Item 03</div>
-        <div class="item">Item 04</div>
-        <div class="item">Item 05</div>
-        <div class="item">Item 06</div>
-        <div class="item">Item 07</div>
-        <div class="item">Item 08</div>
-        <div class="item">Item 09</div>
-        <div class="item">Item 10</div>
-        <div class="item">Item 11</div>
-        <div class="item">Item 12</div>
-    </div>
+    <header class="painel">
+        <div class="item logo">Logo</div>
+        <div class="item titulo-do-site">Título do Site</div>
+        <div class="item menu-sandwich">Menu</div>
+    </header>
 </body>
 </html>
