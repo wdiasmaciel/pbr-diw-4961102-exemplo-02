@@ -1,58 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testes de Flexbox</title>
     <style>
-      * {
-        font-size: 16px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      }
+        * {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0rem;
+        }
 
-      .container{
-        border: 1px solid #bdbbbb;
-        box-shadow: .5rem .5rem .3rem .01rem #bdbbbb;
-        padding: 1rem;
-        height: 30rem;
-        display: flex;
-        flex-wrap: wrap;
-        align-content: start;
-      }
+        .container {
+            border: 1px solid #bdbbbb;
+            box-shadow: .5rem .5rem .3rem .01rem #bdbbbb;
+            padding: 1rem;
+            height: 30rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: start;
+        }
 
-      .item {
-        background-color: blue;
-        color: white;
-        font-weight: bold;
-        margin: .1rem;
-        padding: 1rem;
-        width: 5rem;
-        height: 3rem;
-      }
+        .item {
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+            margin: 0rem;
+            padding: 1rem;
+            width: 5rem;
+            height: 3rem;
+        }
 
-      .logo {
-        flex-grow: 1;
-      }
+        .logo {
+            flex-grow: 1;
+        }
 
-      .titulo-do-site {
-        flex-grow: 12;
-      }
+        .titulo-do-site {
+            flex-grow: 12;
+        }
 
-      .menu-sandwich {
-        flex-grow: 1;
-      }
+        .menu-sandwich {
+            flex-grow: 1;
+        }
 
-      .painel {
-        border: 3px solid red;
-        display: flex;
-      }
+        .cabecalho {
+            display: flex;
+        }
+
+        .painel {
+            display: flex;
+            height: 30rem;
+        }
+
+        .menu-lateral {
+            flex-grow: 3;
+        }
+
+        .parte-principal {
+            border: 1px solid red;
+            flex-grow: 11;
+        }
+
+        .tile{
+            background-color: #dedede;
+            flex-grow: 1;
+            height: 3rem;
+            margin-bottom: .5rem;
+        }
+
+        .tile:hover {
+            background-color: #1fc446;
+            color: white;
+            font-weight: bold;
+        }
     </style>
 </head>
+
 <body>
-    <header class="painel">
+    <header class="cabecalho">
         <div class="item logo">Logo</div>
         <div class="item titulo-do-site">Título do Site</div>
         <div class="item menu-sandwich">Menu</div>
     </header>
+    <section class="painel">
+        <nav class="menu-lateral">
+            <div class="tile">Opção 01</div>
+            <div class="tile">Opção 02</div>
+            <div class="tile">Opção 03</div>
+            <div class="tile">Opção 04</div>
+        </nav>
+        <main class="parte-principal">Conteúdo principal do site</main>
+    </section>
 </body>
+
 </html>
