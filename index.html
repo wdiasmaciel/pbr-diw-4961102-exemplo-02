@@ -50,19 +50,19 @@
 
         .painel {
             display: flex;
-            height: 30rem;
         }
 
         .menu-lateral {
-            flex-grow: 3;
+            width: 25em;
         }
 
         .parte-principal {
-            border: 1px solid red;
+            display: flex;
+            flex-wrap: wrap;
             flex-grow: 11;
         }
 
-        .tile{
+        .tile {
             background-color: #dedede;
             flex-grow: 1;
             height: 3rem;
@@ -73,6 +73,36 @@
             background-color: #1fc446;
             color: white;
             font-weight: bold;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        img {
+            width: 12rem;
+        }
+
+        .imagem {
+            text-align: center;
+        }
+
+        .cartao {
+            border: 1px solid #bdbbbb;
+            box-shadow: .5rem .5rem .3rem .01rem #bdbbbb;
+            width: 12.1rem;
+            margin: 1rem;
+        }
+
+        .descricao {
+            height: 8rem;
+            padding: 1rem;
+        }
+
+        .preco{
+            text-align: right;
+            padding: 1rem;
+            font-weight: bolder;
         }
     </style>
 </head>
@@ -85,12 +115,83 @@
     </header>
     <section class="painel">
         <nav class="menu-lateral">
-            <div class="tile">Opção 01</div>
-            <div class="tile">Opção 02</div>
-            <div class="tile">Opção 03</div>
-            <div class="tile">Opção 04</div>
+            <a href="https://www.google.com" target="_blank"><div class="tile">Opção 01</div></a>
+            <a href="https://www.pucminas.br/" target="_blank"><div class="tile">Opção 02</div></a>
+            <a href="https://www.primevideo.com/" target="_blank"><div class="tile">Opção 03</div></a>
+            <a href="https://www.mcdonalds.com.br/" target="_blank"><div class="tile">Opção 04</div></a>
         </nav>
-        <main class="parte-principal">Conteúdo principal do site</main>
+        <main class="parte-principal">
+            <div class="cartao">
+                <div class="imagem"><img src="sandwich.png" alt="produto 01"></div>
+                <div class="descricao">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem itaque a laudantium corporis qui
+                </div>
+                <div class="preco">
+                    R$ 45,00
+                </div>
+            </div>
+
+            <div class="cartao">
+                <div class="imagem"><img src="sandwich.png" alt="produto 01"></div>
+                <div class="descricao">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem itaque a laudantium corporis qui
+                </div>
+                <div class="preco">
+                    R$ 45,00
+                </div>
+            </div>
+
+            <div class="cartao">
+                <div class="imagem"><img src="sandwich.png" alt="produto 01"></div>
+                <div class="descricao">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem itaque a laudantium corporis qui
+                </div>
+                <div class="preco">
+                    R$ 45,00
+                </div>
+            </div>
+
+            <div class="cartao">
+                <div class="imagem"><img src="sandwich.png" alt="produto 01"></div>
+                <div class="descricao">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem itaque a laudantium corporis qui
+                </div>
+                <div class="preco">
+                    R$ 45,00
+                </div>
+            </div>
+
+            <div class="cartao">
+                <div class="imagem"><img src="sandwich.png" alt="produto 01"></div>
+                <div class="descricao">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem itaque a laudantium corporis qui
+                </div>
+                <div class="preco">
+                    R$ 45,00
+                </div>
+            </div>
+
+            <div class="cartao">
+                <div class="imagem"><img src="sandwich.png" alt="produto 01"></div>
+                <div class="descricao">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem itaque a laudantium corporis qui
+                </div>
+                <div class="preco">
+                    R$ 45,00
+                </div>
+            </div>
+
+            <div class="cartao">
+                <div class="imagem"><img src="sandwich.png" alt="produto 01"></div>
+                <div class="descricao">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem itaque a laudantium corporis qui
+                </div>
+                <div class="preco">
+                    R$ 45,00
+                </div>
+            </div>
+
+        </main>
     </section>
 </body>
 
